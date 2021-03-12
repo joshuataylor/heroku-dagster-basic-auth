@@ -1,2 +1,2 @@
-web: /app/bin/start_with_oauth2_proxy.sh dagit --port 8080
+web: bin/start-nginx dagit --port 3000
 daemon: dagster-daemon run
