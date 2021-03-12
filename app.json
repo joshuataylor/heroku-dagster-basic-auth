@@ -1,0 +1,35 @@
+{
+  "name": "Heroku Dagster Basic Auth",
+  "description": "Heroku Dagster Basic Auth",
+  "website": "https://github.com/joshuataylor/heroku-dagster-basic-auth",
+  "repository": "https://github.com/joshuataylor/heroku-dagster-basic-auth",
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "daemon": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/python",
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "13"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nginx"
+    }
+  ]
+}
