@@ -1,2 +1,2 @@
-web: bin/start-nginx-solo dagit --port 3000
+web: bin/start-nginx-solo start.sh
 daemon: dagster-daemon run
